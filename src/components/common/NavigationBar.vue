@@ -10,7 +10,7 @@
 					>About
 				</router-link>
 				<router-link to="/contact" class="header__navigation-link"
-					><strong>Contact</strong>
+					>Contact
 				</router-link>
 			</nav>
 		</div>
