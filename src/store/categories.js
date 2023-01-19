@@ -28,7 +28,7 @@ export default {
     },
   },
   actions: {
-    async getCollection({commit}) {
+    async getCollection({ commit }) {
       commit(GET_COLLECTION_STARTED);
       try {
         const list = await fetch("https://fakestoreapi.com/products/categories").then(

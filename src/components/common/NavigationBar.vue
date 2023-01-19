@@ -16,37 +16,42 @@
 		</div>
 		<div class="header__right">
 			<nav class="header__nav-right">
-				<!-- <button class="search">
-					<a href="#">
-						<img src=".src/assets/icons/search.png" alt="search" />
-					</a>
-				</button> -->
-				<button class="sign_in"><a href="#">Sign In</a></button>
-				<button class="button sign_up"><a href="#">Sign Up</a></button>
+				<AppButtons class="header__search"
+					><MdIcon name="magnify" size="md" color="gray"
+				/></AppButtons>
+				<AppButtons class="header__search header__search-sign_in"
+					>Sign In</AppButtons
+				>
+				<AppButtons
+					class="
+						header__search header__search-sign_up header__search-sign_up-link
+					"
+					>Sign Up</AppButtons
+				>
 			</nav>
 		</div>
-
-		<!-- <nav class="application-navigation flex-center">
-			<router-link to="/" class="application-navigation-link">
-				<strong>Main</strong></router-link
-			>
-			<router-link to="/about" class="application-navigation-link"
-				><strong>About</strong>
-			</router-link>
-			<router-link to="/contact" class="application-navigation-link"
-				><strong>Contact</strong>
-			</router-link>
-		</nav> -->
 	</header>
 </template>
 
-<style lang="scss" scoped>
+<script>
+import MdIcon from "../common/MdIcon.vue";
+import AppButtons from "../common/AppButtons.vue";
+export default {
+	components: {
+		MdIcon,
+		AppButtons,
+	},
+};
+</script>
+
+
+<style lang="scss">
 .header {
 	background-color: #ffffff;
 	display: flex;
-	padding: 28px 50px;
-	height: 96px;
+	padding: 13px 0px;
 	&__logo {
+		padding: 3px;
 		height: 28px;
 		width: 60px;
 		flex: 0 0 60px;
@@ -54,13 +59,20 @@
 	&__center {
 		flex: 1;
 		display: flex;
+		align-items: center;
 	}
-	&__nav-center,
-	&__nav-right {
-		font-size: 14px;
+	&__right {
+		flex: 0 0 210px;
+		justify-content: flex-end;
+	}
+	&__nav {
+		font-size: 16px;
 		font-family: "SF UI Display Light";
-		font-weight: 400;
 		line-height: 40px;
+		&-right {
+			display: flex;
+			align-items: center;
+		}
 	}
 	&__navigation-link {
 		color: #585858;
@@ -71,14 +83,36 @@
 			color: green;
 		}
 	}
+
+	&__search {
+		cursor: pointer;
+		border: none;
+		width: 30px;
+		height: 38px;
+		background-color: #ffffff;
+		&-sign_in {
+			width: 95px;
+			padding: 4px 8px;
+			&:hover {
+				color: gray;
+			}
+		}
+		&-sign_up {
+			width: 99px;
+			height: 38px;
+			background-color: #fd665e;
+			border-radius: 3px;
+			&-link {
+				color: #ffffff;
+			}
+			&:hover {
+				color: gray;
+			}
+		}
+	}
 }
 .wrapper {
 	margin: 0 165px;
-}
-
-.header__right a {
-	color: #585858;
-	transition: color 0.3s ease;
 }
 
 .small_header {
@@ -86,66 +120,9 @@
 	margin: 0px;
 }
 
-.header__right {
-	flex: 0 0 210px;
-	justify-content: flex-end;
-}
-
-.header__nav_right {
-	display: flex;
-	width: 350px;
-}
-
-.header__nav_center {
-	height: 96px;
-	padding-bottom: 76px;
-}
-
-.search,
-.sign_in {
-	border: none;
-	background-color: #ffffff;
-	padding: 4px 8px;
-	width: 99px;
-	height: 48px;
-}
-
-.search img {
-	position: absolute;
-	top: 46px;
-}
-
-.button {
-	background-color: #fd665e;
-	border-radius: 3px;
-	border: none;
-}
-
-.sign_up {
-	width: 99px;
-	height: 48px;
-}
-
-.sign_up a {
-	color: #ffffff;
-}
-
 .main {
 	max-height: 847px;
 	max-width: 1110px;
-}
-
-.main_title {
-	font-family: "New York Extra Large Bold";
-	line-height: 120px;
-	font-size: 70px;
-	max-width: 820px;
-	max-height: 224px;
-	margin-bottom: 56px;
-}
-
-.main_title span {
-	color: #fd665e;
 }
 
 .wrapper_main {

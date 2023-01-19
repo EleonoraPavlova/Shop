@@ -1,6 +1,6 @@
 <template>
 	<div class="loading">
-		<MdIcon name="loading" :spin="true" />
+		<MdIcon name="loading" :spin="true" size="xxlg" />
 	</div>
 </template>
 
@@ -18,6 +18,7 @@ export default {
 .loading {
 	width: 100%;
 	height: 100%;
+	color: #fd665e;
 	display: flex;
 	align-items: center;
 	justify-content: center;

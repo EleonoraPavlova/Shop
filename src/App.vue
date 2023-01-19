@@ -2,6 +2,10 @@
 	<div class="app">
 		<NavigationBar />
 		<div class="content">
+			<h1 class="content__h1">
+				Most <span class="content__h1-color">Popular</span>
+				Items
+			</h1>
 			<router-view />
 		</div>
 	</div>
@@ -19,13 +23,25 @@ export default {
 
 <style lang="scss">
 .app {
+	font-family: "SF UI Display Thin";
 	height: calc(100% - 20px);
 	height: calc(100% - 20px);
-	padding: 10px;
+	padding: 13px 30px;
+
 	display: grid;
-	grid-template-rows: 50px 1fr;
 	.content {
-		overflow-y: scroll;
+		// overflow-y: scroll;
+		margin: 10px 30px;
+		&__h1 {
+			font-family: "New York Extra Large Bold";
+			line-height: 120px;
+			font-size: 70px;
+			margin-left: 40%;
+			margin-bottom: 50px;
+			&-color {
+				color: #fd665e;
+			}
+		}
 	}
 }
 </style>
