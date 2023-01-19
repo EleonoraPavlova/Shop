@@ -1,6 +1,6 @@
 <template>
 	<div class="notFound">
-		<h6 class="notFound__h6">not found</h6>
+		<h6 class="notFound__h6">Not found, oops..</h6>
 	</div>
 </template>
 
@@ -9,6 +9,7 @@
 	&__h6 {
 		text-align: center;
 		font-weight: 400;
+		margin: 30px 0;
 	}
 }
 </style>

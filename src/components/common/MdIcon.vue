@@ -16,7 +16,7 @@ export default {
 			type: String,
 			default: "",
 			validator(value) {
-				return ["", "success", "error"].includes(value);
+				return ["", "success", "error", "gray"].includes(value);
 			},
 		},
 		size: {

@@ -29,7 +29,4 @@ export default {
 </script>
 
 <style lang="scss">
-.main-color {
-	color: #fd665e;
-}
 </style>

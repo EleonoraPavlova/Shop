@@ -9,6 +9,7 @@
 	&__h3 {
 		text-align: center;
 		font-weight: 400;
+		margin: 30px 0;
 	}
 }
 </style>

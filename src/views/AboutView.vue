@@ -8,6 +8,7 @@
 <style lang="scss" scoped>
 .about {
 	&__h3 {
+		margin: 30px 0;
 		text-align: center;
 		font-weight: 400;
 	}

@@ -61,7 +61,8 @@ export default {
 .product {
 	width: 100%;
 	height: 100%;
-	padding: 0px 25px;
+	margin: 40px 0px;
+	padding: 10px 25px;
 	&__box {
 		display: flex;
 		justify-content: center;
@@ -86,6 +87,8 @@ export default {
 	&__title {
 		padding: 10px 15px;
 		font-family: "SF UI Display Semibold";
+		font-size: 24px;
+		line-height: 40px;
 		margin-bottom: 20px;
 	}
 	&__button {
