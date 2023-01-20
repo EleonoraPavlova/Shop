@@ -1,7 +1,7 @@
 <template>
 	<header class="header">
 		<div class="header__logo">
-			<img src="/arch.png" alt="arch" />
+			<img src="arch.png" alt="arch" />
 		</div>
 		<div class="header__center">
 			<nav class="header__nav-center">

@@ -14,7 +14,7 @@
 			</li>
 		</ul>
 		<div class="footer__logo">
-			<img src="/arch.png" alt="arch" />
+			<img src="arch.png" alt="arch" />
 		</div>
 	</section>
 </template>
