@@ -40,7 +40,6 @@ export default {
 	},
 	data() {
 		return {
-			// selectedCategory: "",
 			activeCategory: null,
 		};
 	},
@@ -77,9 +76,6 @@ export default {
 
 <style lang="scss" scoped>
 .products-view {
-	// display: grid;
-	// grid-template-columns: 185px 1fr;
-	// height: 100%;
 	max-height: 100%;
 	height: 100%;
 	&__title {
@@ -100,7 +96,6 @@ export default {
 		line-height: 100px;
 		font-size: 70px;
 		margin-left: 10%;
-		// margin-bottom: 50px;
 		&-color {
 			color: #fd665e;
 		}

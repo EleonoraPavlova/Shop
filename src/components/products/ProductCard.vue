@@ -52,9 +52,10 @@ export default {
 	padding: 19px;
 	border: 1px solid #fd665e;
 	border-radius: 5px;
-	// display: flex;
-	// flex-direction: column;
-	// justify-content: space-between;
+	&:hover {
+		border-color: #585858;
+		cursor: pointer;
+	}
 	&__content {
 		padding: 10px;
 	}
