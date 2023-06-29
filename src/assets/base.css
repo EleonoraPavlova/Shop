@@ -8,6 +8,10 @@
   position: relative;
 }
 
+:root {
+  --base-color: #8bc052;
+}
+
 body,
 html,
 #app {
